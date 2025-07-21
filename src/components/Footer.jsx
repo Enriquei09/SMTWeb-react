@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <h2><span className="highlight">Mas</span> de nosotros</h2>
+       <h2><span className="highlight">More</span> about us</h2>
 
         <div className="footer-gallery">
           <div className="gallery-item">
@@ -26,8 +26,8 @@ const Footer = () => {
         </div>
 
         <div className="newsletter">
-          <p><span className="highlight">¿Necesitas</span> nuestro apoyo?</p>
-          <small>No espere, haga una cotización inteligente y lógica aquí.</small>
+          <p><span className="highlight">¿Do you need </span> our support?</p>
+          <small>Don't wait, make a smart and logical quote here.</small>
           <form>
             <input type="email" placeholder="Enter Your Email" />
             <button type="submit">Subscribe Now</button>
@@ -38,10 +38,10 @@ const Footer = () => {
       <div className="footer-links">
         <div className="col">
           <h4>About Us.</h4>
-          <p>Clientes corporativos y viajeros han confiado en Sabores para una atención segura y profesional, con comida tradicional al estilo mexicano en el corazón de Canadá.</p>
+          <p>Corporate clients and travelers have trusted Sabores for safe, professional service and traditional Mexican-style cuisine in the heart of Canada.</p>
           <div className="horario">
             <i className="fas fa-clock"></i>
-            <span>Hora de apertura:<br />Lun–Dom: 10:00am - 10:00pm</span>
+            <span>Opening hours:<br />Monday–Sunday: 10:00am - 10:00pm</span>
           </div>
         </div>
         <div className="col">

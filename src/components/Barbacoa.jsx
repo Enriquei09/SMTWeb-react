@@ -6,21 +6,21 @@ const Barbacoa = () => {
     <section className="barbacoa-section">
       <div className="barbacoa-overlay"></div>
       <div className="barbacoa-content">
-        <p className="barbacoa-subtitulo">Fin de semana Mexicana</p>
+        <p className="barbacoa-subtitulo">Mexican Weekend</p>
         <h2>
-          <span className="highlight">Barbacoa</span> tradicional
+          <span className="highlight">Traditiona</span> Barbacoa
         </h2>
-        <p className="disponible">Disponible solo viernes a domingo</p>
+        <p className="disponible">Available only Friday to Sunday</p>
         <p className="descripcion">
-          Solo <strong>viernes a domingo</strong> Disfruta nuestra barbacoa al estilo Hidalgo: <br />
-          carne suave, tortillas a mano, cebolla, cilantro y su respectivo consomé bien calientito.
-        </p>
-        <p className="frase">Un sabor que no se olvida y se sirve con amor.</p>
+              Friday to Sunday only. Enjoy our Hidalgo-style barbacoa: <br />
+              tender meat, handmade tortillas, onion, cilantro, and a piping hot broth.
+              </p>
+        <p className="frase">A flavor that is not forgotten and is served with love.</p>
 
         <div className="botones-barbacoa">
-          <button className="btn-barbacoa">Ver menú</button>
+          <button className="btn-barbacoa">View menu</button>
           <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="btn-tiktok">
-            <i className="fab fa-tiktok"></i> Ver TikTok
+            <i className="fab fa-tiktok"></i> View TikTok
           </a>
         </div>
       </div>

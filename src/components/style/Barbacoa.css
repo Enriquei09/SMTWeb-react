@@ -1,0 +1,126 @@
+.barbacoa-section {
+  position: relative;
+  background-image: url("/src/assets/barbacoa.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 3rem 1.5rem;  /* reducido */
+  min-height: 55vh;      /* más compacto aún */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  z-index: 1;
+}
+
+.barbacoa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.barbacoa-content {
+  max-width: 500px;
+  text-align: right;
+  padding-right: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.barbacoa-subtitulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.barbacoa-content h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.barbacoa-content .highlight {
+  color: #e1008d;
+}
+
+.disponible {
+  color: #e0e0e0;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.frase {
+  font-style: italic;
+  margin-bottom: 1.2rem;
+  color: #ddd;
+  font-size: 0.85rem;
+}
+
+.botones-barbacoa {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.btn-barbacoa,
+.btn-tiktok {
+  padding: 0.5rem 1.1rem;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-barbacoa {
+  background-color: white;
+  color: #000;
+  border: 2px solid white;
+}
+
+.btn-barbacoa:hover {
+  background-color: #e1008d;
+  color: white;
+  border-color: #e1008d;
+}
+
+.btn-tiktok {
+  background-color: #e1008d;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-tiktok i {
+  font-size: 1rem;
+}
+
+.btn-tiktok:hover {
+  background-color: #c10076;
+}
+
+@media (max-width: 768px) {
+  .barbacoa-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .botones-barbacoa {
+    justify-content: center;
+  }
+}

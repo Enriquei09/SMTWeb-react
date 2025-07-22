@@ -1,4 +1,4 @@
-/* General navbar */
+/* === Navbar General === */
 .navbar {
   position: sticky;
   top: 0;
@@ -28,6 +28,7 @@
   align-items: flex-start;
   position: relative;
   z-index: 2;
+  flex-wrap: wrap; /* para evitar desbordamiento en pantallas pequeñas */
 }
 
 /* Logo + menú */
@@ -40,6 +41,7 @@
 
 .titulo-img {
   height: 60px;
+  max-width: 100%;
 }
 
 /* Menú */
@@ -50,12 +52,19 @@
   margin: 0;
   padding: 0;
   transition: all 0.3s ease;
+  flex-wrap: wrap;
 }
 
 .navbar-menu li {
   font-weight: bold;
   color: white;
   cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li:hover {
+  color: #e1008d;
 }
 
 .navbar-menu .active {
@@ -72,13 +81,12 @@
   overflow: hidden;
 }
 
-
-
 .decor-img {
   height: 100px;
+  max-width: 100%;
 }
 
-/* Hamburger hidden by default */
+/* Botón hamburguesa (solo móvil) */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -88,7 +96,7 @@
   cursor: pointer;
 }
 
-/* === RESPONSIVE === */
+/* === Responsivo: pantallas menores a 768px === */
 @media (max-width: 768px) {
   .navbar-left {
     width: 100%;
@@ -110,7 +118,34 @@
     display: flex;
   }
 
-  .navbar-right {
-    display: none; /* Ocultar nopal en móvil o adaptarlo si quieres */
+    .navbar-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .decor-img {
+    height: 60px;
+  }
+
+  .navbar-row {
+    flex-direction: column; /* Apila todo verticalmente */
+    align-items: center;
+  }
+}
+
+/* === Responsivo: pantallas muy pequeñas (<=480px) === */
+@media (max-width: 480px) {
+  .titulo-img {
+    height: 45px;
+  }
+
+  .hamburger {
+    font-size: 1.8rem;
+  }
+
+  .navbar-menu li {
+    font-size: 0.95rem;
   }
 }

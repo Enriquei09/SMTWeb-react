@@ -1,18 +1,48 @@
+/* Estilos generales */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: #000000; /* Fondo negro global */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Asegura que no haya desbordamientos laterales */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: black; /* Negro fijo */
+  color: white;
+}
+
+/* Elimina la barra de scroll horizontal en navegadores */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Imágenes adaptables */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links */
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,21 +52,7 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
+/* Botones */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -56,6 +72,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Preferencia clara (opcional, solo si usas modo claro) */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,36 +84,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  width: 100%;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-html, body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-}
-html {
-  scroll-behavior: smooth;
-}
-

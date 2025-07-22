@@ -11,6 +11,8 @@ import img10 from '../assets/extra3.png';
 import img11 from '../assets/extra4.png';
 import img12 from '../assets/extra5.png';
 import img13 from '../assets/extra6.png';
+import mosaico from '../assets/mosaico.png';
+
 
 const AboutUs = () => {
   return (
@@ -52,14 +54,11 @@ const AboutUs = () => {
         </div>
 
         <div className="about-extra">
-          <div className="extra-gallery">
-            <img src={img8} alt="Extra 1" />
-            <img src={img9} alt="Extra 2" />
-            <img src={img10} alt="Extra 3" />
-            <img src={img11} alt="Extra 4" />
-            <img src={img12} alt="Extra 5" />
-            {/*<img src={img13} alt="Extra 6" />*/}
-          </div>
+       <div className="extra-gallery">
+  <img src={mosaico} alt="Mosaico de platillos" className="mosaico-unico" />
+</div>
+
+
 
           <div className="extra-info">
   <h4 className="porque-subtitulo">Why choose us?</h4>

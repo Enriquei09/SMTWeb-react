@@ -29,10 +29,10 @@ const Navbar = () => {
 
           <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
             <li onClick={() => scrollToSection('home')}>Home</li>
-            <li onClick={() => scrollToSection('barbacoa')}>Menú</li>
-            <li onClick={() => scrollToSection('footer')}>Páginas</li>
-            <li onClick={() => scrollToSection('about')}>Acerca de</li>
-            <li onClick={() => scrollToSection('ubicacion')}>Ubicación</li>
+            <li onClick={() => scrollToSection('barbacoa')}>Menu</li>
+            <li onClick={() => scrollToSection('footer')}>Pages</li>
+            <li onClick={() => scrollToSection('about')}>About us</li>
+            <li onClick={() => scrollToSection('ubicacion')}>Location</li>
           </ul>
         </div>
 

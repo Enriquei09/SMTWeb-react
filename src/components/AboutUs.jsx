@@ -5,12 +5,6 @@ import img1 from '../assets/masa.png';
 import img2 from '../assets/verduras.png';
 import img3 from '../assets/tacoabout.png';
 import categoriaImg from '../assets/categoriasComida.png'; // imagen completa de las 4 comidas
-import img8 from '../assets/extra1.png';
-import img9 from '../assets/extra2.png';
-import img10 from '../assets/extra3.png';
-import img11 from '../assets/extra4.png';
-import img12 from '../assets/extra5.png';
-import img13 from '../assets/extra6.png';
 import mosaico from '../assets/mosaico.png';
 
 

@@ -1,14 +1,15 @@
 /* === Navbar General === */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: black; /* asegúrate de usar color sólido */
   padding: 1.2rem 2rem;
   color: white;
 }
+
 
 /* Overlay oscuro */
 .overlay {

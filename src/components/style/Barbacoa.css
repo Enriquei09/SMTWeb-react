@@ -90,12 +90,17 @@
   background-color: white;
   color: #000;
   border: 2px solid white;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .btn-barbacoa:hover {
   background-color: #e1008d;
   color: white;
   border-color: #e1008d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(225, 0, 141, 0.3);
 }
 
 .btn-tiktok {
